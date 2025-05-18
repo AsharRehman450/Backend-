@@ -13,6 +13,6 @@ app.use(cors());
 app.use("/ashar", router);
 
 connectDB()
-app.listen(port,()=>{
-    console.log("server is running",port); 
-})
+app.listen(port, '0.0.0.0', () => {
+  console.log("server is running", port); 
+});

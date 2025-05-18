@@ -10,7 +10,7 @@ export const signupcontroller = async (req,res)=>{
         }
         const emailExist = await userModel.findOne({email})
         if(emailExist !=null){
-           return res.status(400).json({
+           return  res.status(400).json({
                 message:"email already exist"
             })
         }
